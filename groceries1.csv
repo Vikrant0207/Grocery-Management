@@ -1,0 +1,21 @@
+ItemID,item_name,Category,Quantity,Manufacturing_Date,Expiry_Date,Price
+1,7 up,Drinks,750ml,07-08-2023,04-12-2023,40
+2,Alo Fruit,Drinks,1L,26-06-2023,25-06-2024,120
+3,Red Bull,Drinks,250ml,20-12-2022,20-12-2024,125
+4,Oreo,Biscuit,113g,12-07-2023,12-03-2023,35
+5,Good Day,Biscuit,200g,07-08-2023,06-02-2024,35
+6,Bourbon,Biscuit,150g,24-07-2023,20-01-2024,40
+7,Bajaj Almond Drops,Hair Oil,475ml,01-04-2023,01-04-2026,305
+8,Colgate,Toothpaste,150g,01-07-2023,01-07-2025,92
+9,Close Up,Toothpaste,150g,01-07-2023,01-07-2025,110
+10,Pepsodent,Toothpaste,140g,01-08-2023,01-08-2025,118
+11,Surf Excel,Washing Powder,1kg,05-08-2023,08-01-2025,130
+12,Tide Ultra,Washing Powder,1kg,01-06-2023,01-06-2025,170
+13,Savlon,Sanitizer,500ml,01-11-2022,01-10-2025,187
+14,Dettol,Sanitizer,50ml,01-07-2023,01-06-2025,25
+15,Vivel,Soap,100g,01-04-2023,01-03-2025,30
+16,Pears,Soap,300g,01-07-2023,01-07-2025,135
+17,Head & Shoulder,Shampoo,340ml,01-06-2023,01-05-2026,379
+18,Himalaya,Shampoo,400ml,01-05-2023,01-04-2026,340
+19,Harpic,Cleaner,500ml,01-08-2023,01-07-2025,99
+20,Vanish,Cleaner,400ml,01-06-2023,01-06-2025,130
