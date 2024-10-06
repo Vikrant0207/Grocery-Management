@@ -13,9 +13,9 @@ def addnewitem():
     Manufacturing_Date = input("Enter manufacturing date : ")
     Expiry_Date = input("Enter expiry date : ")
     Price = int(input("Enter item's price : "))
-    bdf = pd.read_csv(r'F:\IP PROJECT\Grocery-Management\groceries1.csv')
+    bdf = pd.read_csv(r'F:\Github\Grocery-Management\groceries1.csv')
     n = bdf['ItemID'].count()
-    bdf.to_csv(r'F:\IP PROJECT\Grocery-Management\groceries1.csv',index = False)
+    bdf.to_csv(r'F:\Github\Grocery-Management\groceries1.csv',index = False)
     print('Item added successfully')
     print(bdf)
 
@@ -23,7 +23,7 @@ def addnewitem():
 
 def searchitem():
     item_name = input('Enter a item name : ')
-    bdf=pd.read_csv(r'F:\IP PROJECT\Grocery-Management\groceries1.csv')
+    bdf=pd.read_csv(r'F:\Github\Grocery-Management\groceries1.csv')
     df=bdf.loc[bdf['item_name']==item_name]
     if df.empty:
         print('No Item found with given code')
@@ -34,15 +34,15 @@ def searchitem():
 
 def deleteitem():
     item_name = input('Enter a ItemID : ')
-    bdf=pd.read_csv(r'F:\IP PROJECT\Grocery-Management\groceries1.csv')
+    bdf=pd.read_csv(r'F:\Github\Grocery-Management\groceries1.csv')
     bdf=bdf.drop(bdf[bdf['item_name']==item_name].index)
-    bdf.to_csv(r'F:\IP PROJECT\Grocery-Management\groceries1.csv', index= False)
+    bdf.to_csv(r'F:\Github\Grocery-Management\groceries1.csv', index= False)
     print('Item deleted successfully')
     print(bdf)
 
 
 def showitem():
-    bdf=pd.read_csv(r'F:\IP PROJECT\Grocery-Management\groceries1.csv')
+    bdf=pd.read_csv(r'F:\Github\Grocery-Management\groceries1.csv')
     print(bdf)
 
 
@@ -51,16 +51,16 @@ def addnewcustomer():
     cname = input('Enter customer name : ')
     phoneno = int(input('Enter phone number : '))
     category=input('Enter category of product they buy :')
-    mdf = pd.read_csv(r'F:\IP PROJECT\Grocery-Management\freqcustomers1.csv')
+    mdf = pd.read_csv(r'F:\Github\Grocery-Management\freqcustomers1.csv')
     n = mdf['cid'].count()
-    mdf.to_csv(r'F:\IP PROJECT\Grocery-Management\freqcustomers1.csv', index = False)
+    mdf.to_csv(r'F:\Github\Grocery-Management\freqcustomers1.csv', index = False)
     print('New Member added successfully')
     print(mdf)
 
 
 def searchcustomer():
     cname = input('Enter a customer name : ')
-    bdf = pd.read_csv(r'F:\IP PROJECT\Grocery-Management\freqcustomers1.csv')
+    bdf = pd.read_csv(r'F:\Github\Grocery-Management\freqcustomers1.csv')
     df = bdf.loc[bdf['cname']==cname]
     if df.empty:
         print('No customer found with given name')
@@ -71,21 +71,21 @@ def searchcustomer():
 
 def deletecustomer():
     cid = float(input('Enter a customer id : '))
-    bdf=pd.read_csv(r'F:\IP PROJECT\Grocery-Management\freqcustomers1.csv')
+    bdf=pd.read_csv(r'F:\Github\Grocery-Management\freqcustomers1.csv')
     bdf=bdf.drop(bdf[bdf['cid']==cid].index)
-    bdf.to_csv(r'F:\IP PROJECT\Grocery-Management\freqcustomers1.csv', index= False)
+    bdf.to_csv(r'F:\Github\Grocery-Management\freqcustomers1.csv', index= False)
     print('Customer deleted successfully')
     print(bdf)
 
 
 def showcustomers():
-    bdf=pd.read_csv(r'F:\IP PROJECT\Grocery-Management\freqcustomers1.csv')
+    bdf=pd.read_csv(r'F:\Github\Grocery-Management\freqcustomers1.csv')
     print(bdf)
 
 
 def purchaseitem():
     item_name = input('Enter item name : ')
-    bdf = pd.read_csv(r'F:\IP PROJECT\Grocery-Management\groceries1.csv')
+    bdf = pd.read_csv(r'F:\Github\Grocery-Management\groceries1.csv')
     bdf = bdf.loc[bdf['item_name']==item_name]
     if bdf.empty:
         print('No item found in store')
@@ -93,7 +93,7 @@ def purchaseitem():
 
 
     cname = input('Enter customer name : ')
-    mdf=pd.read_csv(r'F:\IP PROJECT\Grocery-Management\freqcustomers1.csv')
+    mdf=pd.read_csv(r'F:\Github\Grocery-Management\freqcustomers1.csv')
     mdf=mdf.loc[mdf['cname']==cname]
     if mdf.empty:
         print('No such customer found')
@@ -104,24 +104,24 @@ def purchaseitem():
     category = input('Enter category : ')
     quantity = input("Enter item's quantity :")
     noofitemspurchased = int(input('Amount of items purchased :'))
-    bdf=pd.read_csv(r'F:\IP PROJECT\Grocery-Management\purchaserecord.csv')
+    bdf=pd.read_csv(r'F:\Github\Grocery-Management\purchaserecord.csv')
     n=bdf['item_name'].count()
-    bdf.to_csv(r'F:\IP PROJECT\Grocery-Management\purchaserecord.csv',index = False)
+    bdf.to_csv(r'F:\Github\Grocery-Management\purchaserecord.csv',index = False)
     print('Item purchased successfully')
     print(bdf)
 
 
 
 def showpurchaseditems():
-    idf=pd.read_csv(r'F:\IP PROJECT\Grocery-Management\purchaserecord.csv')
+    idf=pd.read_csv(r'F:\Github\Grocery-Management\purchaserecord.csv')
     print(idf)
 
 
 def deletepurchaseditem():
     item_name=input('Enter a item name : ')
-    bdf=pd.read_csv(r'F:\IP PROJECT\Grocery-Management\purchaserecord.csv')
+    bdf=pd.read_csv(r'F:\Github\Grocery-Management\purchaserecord.csv')
     bdf=bdf.drop(bdf[bdf['item_name']==item_name].index)
-    bdf.to_csv(r'F:\IP PROJECT\Grocery-Management\purchaserecord.csv', index= False)
+    bdf.to_csv(r'F:\Github\Grocery-Management\purchaserecord.csv', index= False)
     print('Deleted purchased item record Successfully')
     print(bdf)
 
@@ -131,7 +131,7 @@ def showcharts():
     print('Press 2 - Number of Books issued by members ')
     ch=int(input('Enter your choice : '))
     if ch == 1:
-        df = pd.read_csv(r'F:\IP PROJECT\Grocery-Management\groceries1.csv')
+        df = pd.read_csv(r'F:\Github\Grocery-Management\groceries1.csv')
         df = df[['item_name','Price']]
         df.plot('item_name','Price')
         plt.xlabel('Item Name------->')
@@ -139,7 +139,7 @@ def showcharts():
         plt.show()
 
     elif ch == 2:
-        df = pd.read_csv(r'F:\IP PROJECT\Grocery-Management\purchaserecord.csv')
+        df = pd.read_csv(r'F:\Github\Grocery-Management\purchaserecord.csv')
         df = df[['noofitemspurchased','cname']]
         df.plot(kind='bar', color='red')
         plt.show()
@@ -148,7 +148,7 @@ def showcharts():
 def login():
     uname = str(input('Enter Username : '))
     pwd = int(input('Enter Password : '))
-    df = pd.read_csv(r'F:\IP PROJECT\Grocery-Management\security.csv')
+    df = pd.read_csv(r'F:\Github\Grocery-Management\security.csv')
     df = df.loc[df['username']==uname]
     if df.empty:
         print('Invalid Username given')
