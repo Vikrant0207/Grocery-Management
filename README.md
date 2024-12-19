@@ -9,3 +9,8 @@ You are free to make changes as you wish to improve this project. If you clone t
 Keep Breathing, Keep Coding !!
 <br>
 Good Luck 👍 
+
+<hr>
+
+#License
+This project is licensed under the MIT License.
