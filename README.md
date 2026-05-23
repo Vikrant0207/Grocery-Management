@@ -1,5 +1,7 @@
 # Hello Coders !!!
 
+I am Vikrant Kumar Mehta and this is my first repo
+
 This is a software based program which is made to ease up the process of managing a Grocery Store
 <br>
 
@@ -9,3 +11,4 @@ You are free to make changes as you wish to improve this project. If you clone t
 Keep Breathing, Keep Coding !!
 <br>
 Good Luck 👍 
+
